@@ -158,18 +158,15 @@ function App() {
 
   const handleObstaclesSubmit = (e) => {
     e.preventDefault();
-    if (obstacleChecker(obstacleX, obstacleY)) {
-      alert("Obstacle already exists");
-      return;
+    alert("Obstacle already exists");
+    return;
+    if (obstacleX && obstacleY) {
+      setObstacles((current) => [
+        ...current,
+        [parseInt(obstacleX, 10), parseInt(obstacleY, 10)],
+      ]);
     } else {
-      if (obstacleX && obstacleY) {
-        setObstacles((current) => [
-          ...current,
-          [parseInt(obstacleX, 10), parseInt(obstacleY, 10)],
-        ]);
-      } else {
-        alert("Empty input");
-      }
+      alert("Empty input");
     }
   };
 
