@@ -42,6 +42,7 @@ rrrffffffrfffffffff
 ## React
 ---
 The next part is related to the front-end React page. The website is live on https://mohamedayman74.github.io/Pentab-Mars-Rover/
+> **_NOTE:_** The coordinates range from 0 to 26 when landing on mars
 
 ### Getting Started
 ---
