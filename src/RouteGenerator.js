@@ -25,6 +25,11 @@ const RouteGenerator = ({ obstacles }) => {
           onChange={(e) =>
             setstartPos((curr) => ({ ...curr, x: e.target.value }))
           }
+          onKeyPress={(e) => {
+            if (!/[0-9]/.test(e.key)) {
+              e.preventDefault();
+            }
+          }}
         />
       </div>
       <div className="Group-Inputs">
@@ -37,6 +42,11 @@ const RouteGenerator = ({ obstacles }) => {
           onChange={(e) =>
             setstartPos((curr) => ({ ...curr, y: e.target.value }))
           }
+          onKeyPress={(e) => {
+            if (!/[0-9]/.test(e.key)) {
+              e.preventDefault();
+            }
+          }}
         />
       </div>
       <div className="Group-Inputs">
@@ -49,6 +59,11 @@ const RouteGenerator = ({ obstacles }) => {
           onChange={(e) =>
             setDesiredPos((curr) => ({ ...curr, x: e.target.value }))
           }
+          onKeyPress={(e) => {
+            if (!/[0-9]/.test(e.key)) {
+              e.preventDefault();
+            }
+          }}
         />
       </div>
       <div className="Group-Inputs">
@@ -61,6 +76,11 @@ const RouteGenerator = ({ obstacles }) => {
           onChange={(e) =>
             setDesiredPos((curr) => ({ ...curr, y: e.target.value }))
           }
+          onKeyPress={(e) => {
+            if (!/[0-9]/.test(e.key)) {
+              e.preventDefault();
+            }
+          }}
         />
       </div>
       <div className="Route-Info">

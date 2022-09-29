@@ -83,6 +83,8 @@ function App() {
       setStarted(false);
       return true;
     }
+    newCoordinates.x >= 26 && (newCoordinates.x = 0);
+    newCoordinates.y >= 26 && (newCoordinates.y = 0);
     forwardDirection[directions.indexOf(coordinates.heading)](newCoordinates);
     const { x, y } = coordinates;
     setCoordinates({ ...newCoordinates });
@@ -106,6 +108,8 @@ function App() {
       setStarted(false);
       return true;
     }
+    newCoordinates.x >= 26 && (newCoordinates.x = 0);
+    newCoordinates.y >= 26 && (newCoordinates.y = 0);
     backwardDirection[directions.indexOf(coordinates.heading)](newCoordinates);
     const { x, y } = coordinates;
     setCoordinates({ ...newCoordinates });
@@ -154,13 +158,18 @@ function App() {
 
   const handleObstaclesSubmit = (e) => {
     e.preventDefault();
-    if (obstacleX && obstacleY) {
-      setObstacles((current) => [
-        ...current,
-        [parseInt(obstacleX, 10), parseInt(obstacleY, 10)],
-      ]);
+    if (obstacleChecker(obstacleX, obstacleY)) {
+      alert("Obstacle already exists");
+      return;
     } else {
-      alert("Empty input");
+      if (obstacleX && obstacleY) {
+        setObstacles((current) => [
+          ...current,
+          [parseInt(obstacleX, 10), parseInt(obstacleY, 10)],
+        ]);
+      } else {
+        alert("Empty input");
+      }
     }
   };
 
