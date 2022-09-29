@@ -73,6 +73,6 @@ When you are in the project directory, you can use the following commands
 2. Controlled inputs Where you can: 
 - Specify starting coordinates
 - Add obstacles
-- Give commands to the rover
+- Give commands to the rover  -    **_NOTE:_** Use your mouse to paste generated commands, keyboard inputs except f/b/l/r and backspace are disabled.
 - Generate route commands to specific coordinates, avoiding obstcales.
 - Delete obstcales if any were added.
