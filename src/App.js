@@ -370,9 +370,11 @@ function App() {
               </form>
             </div>
           )}
+          <h3>Route Generator</h3>
           <div className="Route">
             <RouteGenerator obstacles={obstacles} />
           </div>
+          <h3>Restart App</h3>
           <button onClick={handleRestart}>Restart</button>
         </div>
       </div>
