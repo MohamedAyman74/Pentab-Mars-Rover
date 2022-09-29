@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Pentab-Mars-Rover/static/css/main.a4855845.css",
+    "main.js": "/Pentab-Mars-Rover/static/js/main.62b00f87.js",
+    "static/js/787.f6277637.chunk.js": "/Pentab-Mars-Rover/static/js/787.f6277637.chunk.js",
+    "index.html": "/Pentab-Mars-Rover/index.html",
+    "main.a4855845.css.map": "/Pentab-Mars-Rover/static/css/main.a4855845.css.map",
+    "main.62b00f87.js.map": "/Pentab-Mars-Rover/static/js/main.62b00f87.js.map",
+    "787.f6277637.chunk.js.map": "/Pentab-Mars-Rover/static/js/787.f6277637.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.a4855845.css",
+    "static/js/main.62b00f87.js"
+  ]
+}
