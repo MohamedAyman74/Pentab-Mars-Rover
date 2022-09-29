@@ -1,0 +1,21 @@
+.Group-Inputs {
+  display: flex;
+  width: 50%;
+  flex-direction: column;
+}
+
+.Group-Inputs input {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#btn-generate {
+  width: 100px;
+  margin: 0 auto;
+}
+
+.Route-Info {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}

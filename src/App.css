@@ -1,0 +1,77 @@
+body {
+  background-color: #191919;
+  text-align: center;
+  color: white;
+}
+
+button {
+  width: 100px;
+  background-color: #e58f65;
+  border: none;
+  border-radius: 3px;
+}
+
+.App h1 {
+  color: white;
+  background: linear-gradient(to right bottom, #e49e3d, #170204);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.Container {
+  column-count: 2;
+  height: 90vh;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.Grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0;
+  width: 600px;
+  height: 600px;
+  flex-direction: column-reverse;
+  align-content: center;
+}
+
+.Cell {
+  height: 20px;
+  width: 20px;
+  border: 1px solid black;
+  color: white;
+}
+
+.Controls {
+  float: left;
+  height: 100%;
+  width: 50%;
+}
+
+.Start {
+  background-color: green;
+}
+
+.Undiscovered {
+  background-color: #c94f20;
+  border-color: #e58f65;
+}
+
+.Discovered {
+  background-color: darkblue;
+}
+
+.Obstacle {
+  background-color: red;
+}
+
+.Stop {
+  background-color: black;
+}
+
+.Route {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+}

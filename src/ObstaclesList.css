@@ -1,0 +1,12 @@
+ul {
+  list-style-type: none;
+}
+
+.Delete-Btn {
+  margin: 30px;
+  border-radius: 2%;
+  border: none;
+  padding: 5px 15px;
+  color: white;
+  background: red;
+}
