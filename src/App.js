@@ -159,8 +159,6 @@ function App() {
 
   const handleObstaclesSubmit = (e) => {
     e.preventDefault();
-    alert("Obstacle already exists");
-    return;
     if (obstacleX && obstacleY) {
       setObstacles((current) => [
         ...current,
