@@ -84,7 +84,7 @@ function App() {
       return true;
     }
     newCoordinates.x >= 26 && (newCoordinates.x = 0);
-    newCoordinates.x == 0 && (newCoordinates.x = 26);
+    newCoordinates.x === 0 && (newCoordinates.x = 26);
     newCoordinates.y >= 26 && (newCoordinates.y = 0);
     forwardDirection[directions.indexOf(coordinates.heading)](newCoordinates);
     const { x, y } = coordinates;
